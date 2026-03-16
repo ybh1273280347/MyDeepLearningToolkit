@@ -171,7 +171,7 @@ def visualize_results(results_df, metrics: list, mode='epoch'):
             axes[i].grid(True, alpha=0.3)
             axes[i].legend()
 
-        for j in range(i, len(axes)):
+        for j in range(i+1, len(axes)):
             axes[j].set_visible(False)
 
         plt.tight_layout()
